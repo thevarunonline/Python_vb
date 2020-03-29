@@ -1,0 +1,252 @@
+#Hello Word *******************
+#name=input("Please Enter your name: ")
+#print('Hello',name,"! How Are you?")
+
+#Variable*****************
+#f_name="Varun"
+#l_name="Bhardwaj"
+#msg=("Hello "+f_name+" "+l_name+'!')
+#print(msg)
+
+#Lists**********
+# Bikes=['TVS','Bullet','Suzuki','Hero']
+# print(f'We have following brands available for now. {Bikes}')
+# print(Bikes[0:3])
+# print(Bikes[:])
+# print(Bikes[-2])
+# Bikes[2]='Honda'
+# print(Bikes[2])
+# for i in Bikes:
+#     if len(i)<10:
+#         Bikes.append('Harley Davidson')
+#     elif len(i)<20:
+#         Bikes.append('Please do not cross your limit')
+# print(Bikes)
+
+# sq=[]
+# for i in range(1,99):
+#     sq.append(i**2)
+# print(sq)
+
+
+# sq=[i**2 for i in range(1,11)]
+# print(sq)
+
+# f_nu=int(input("Please Enter First Number: "))
+# s_nu=int(input("Please Enter Second Number: "))
+# t_nu=int(input("Please Enter Third Number: "))
+# fo_nu=int(input("Please Enter Forth Number: "))
+
+
+# list=[f_nu,s_nu,t_nu,fo_nu]
+# r=list[0]
+
+# for i in list:
+#     if i>r:
+#         r=i
+# print(r)
+
+
+# list=[2,3,4,5,6,2,4]
+# top3=list[:3]
+# print(top3)
+
+# list=['Varun','Ishan','Rahul','Ankit','Pankaj']
+# sliced=list[2:]
+# print(sliced)
+
+# list=['kamal','Joginder','Deepak','Ankit','Manoj']
+# cp=list[:]
+# print(cp)
+
+#Tuples*****************************************
+#Tuples are also lists but value in tuples can not be modified
+# years=(1998,1999,2000,2001,2002,2003)
+# months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+# Days=range(1,31)
+#
+# for year in years:
+#     print(year,':')
+#     for month in months:
+#         print(month)
+#         for day in Days:
+#             print(day)
+
+#If Statements*******************************************
+
+# print("Login to Proceed")
+# name=input("Please enter your name: ")
+# PIN=int(input('Please enter the four digit PIN: '))
+#
+# name_list=['VARUN','ISHAN','SAROJ','KARUNA']
+# PIN_list=[1234,2222,4321,4444]
+# chances=2
+#
+#
+# def body():
+#     withdraw = print("Press 1 to withdraw: ")
+#     change_pin = print("Press 2 to Change the PIN: ")
+#     balance = print("Press 3 to Check Account Balance: ")
+#     update_mobile = print("Press 4 to Update Mobile number: ")
+#     exit_op=print("Press 5 To logout: ")
+#     user_input = int(input(">"))
+#
+#     initial_amount=5000
+#     mobile_numbers=[]
+#
+#     if user_input==1:
+#         print("Please enter the Amount:")
+#         amount=int(input(">"))
+#         print("Amount ",amount," is being processed. Please collect the amount")
+#         initial_amount-=amount
+#
+#     elif user_input==2:
+#         old_pin=int(input("Please enter the old PIN"))
+#         if old_pin==PIN:
+#             new_pin=int(input("Please enter New PIN: "))
+#         else:
+#             print("Incorrect PIN!")
+#     elif user_input==3:
+#         print("Your account balance is: ",initial_amount)
+#     elif user_input==4:
+#         mo_num=int(input("Please Enter your 10 digit mobile number: "))
+#         mobile_numbers.append(mo_num)
+#         print("Your mobile number has been updated.\n Now your mobile number is ",mo_num)
+#     elif user_input==5:
+#         print("Logout Successful!")
+#
+#     else:
+#         print("Please choose correct Option")
+# while True:
+#
+#
+#     if name.upper()==name_list[0] and PIN==PIN_list[0]:
+#         print('Welcome Varun Bhardwaj')
+#         body()
+#         break
+#     elif name.upper()==name_list[1] and PIN==PIN_list[1]:
+#         print('Welcome Ishan Bhardwaj')
+#         body()
+#     elif name.upper() == name_list[2] and PIN == PIN_list[2]:
+#         print('Welcome Saroj Pathak')
+#         body()
+#     elif name.upper() == name_list[3] and PIN == PIN_list[3]:
+#         print('Welcome Karuna Pathak')
+#         body()
+#     elif chances==0:
+#         print('You have exceeded the limit. \n Exiting !!!')
+#         break
+#     else:
+#         chances=chances-1
+#         print("Login Unsuccessful!")
+#         print("Please check your Name and PIN. \n Try Again")
+#
+#         print("Login to Proceed")
+#         name = input("Please enter your name: ")
+#         PIN = int(input('Please enter the four digit PIN: '))
+#
+
+
+# print("Please enter 5 values to check which is greater: ")
+# list=[]
+# for i in range(5):
+#     user_input=int(input("> "))
+#     list.append(user_input)
+# print(list)
+# max=list[0]
+# for no in list:
+#     if no>max:
+#         max=no
+# print(f'Greatest number is {max}')
+
+# Dictionaries ****************************************************
+#Dictionary stores data in key-value pair which help us to indicate something as something else.
+
+# fav_color={'Rahul':'green','Ishan':'red','Mohit':'Orange'}
+# for name, color in fav_color.items():
+#     print(f'{name} loves {color}')
+
+# for name, color in fav_color.items():
+#     print(f"Hi {name} {color}")
+
+# for name in fav_color.keys():
+#     print(f'Hi {name}')
+
+# User input*****************************************************
+
+# name= input("Please enter the name: ")
+# age= int(input("Please enter your age: "))
+# height=float(input("Please enter you height: "))
+
+
+#While Loop **********************************************************
+
+# current_val=1
+# while current_val<=5:
+#     print(current_val)
+#     current_val+=1
+# print("Done")
+# msg= input("Please enter your message: ")
+# while msg.upper()!="QUIT":
+#     print(msg)
+
+# Functions **************************************************************
+#Functions are the named block of code to perform certain task.
+
+# def greet():
+#     print("Hi Varun! How are you?")
+# greet()
+#
+# def args(name):
+#     print(f'Hi {name}! Welcome to Python course.')
+# args('Varun')
+#
+# def fixed_args(name='Ishan Bhardwaj'):
+#     print(f'Hi {name}! You have passed the exam.')
+# fixed_args()
+#
+# def addition(x, y, z):
+#     a=x+y+z
+#     return(a)
+# sum=addition(2,4,6)
+# print(sum)
+#
+# def sub(x,y):
+#     return x-y
+# sub=sub(5,3)
+# print(sub)
+
+# classes ******************************************************************
+
+# classes are the set of attributes and methods and objects are the instance of classes. Classes works as template
+# for object.
+# Classes consists of 3 key components: Class variable, Instance variable and Menthods.
+
+
+#Instance Variables
+# class Employee:
+#     pass
+#
+# emp_1= Employee()
+# emp_2=Employee()
+#
+# emp_1.name= "Varun"
+# emp_1.Sal= 50000
+# emp_2.name= "Rupesh"
+# emp_2.sal= 60000
+#
+# print(emp_1.name)
+# print(emp_2.name)
+#
+#
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name= name
+#         self.marks= marks
+#
+# st_1=Student("Varun",29)
+# st_2= Student("Ishan",60)
+#
+# print(st_1.name,st_1.marks)
+# print(st_2.name,st_2.marks)
+

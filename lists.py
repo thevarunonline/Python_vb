@@ -1,0 +1,10 @@
+names=['Varun','Ishan','Sandeep','Rahul','Ritesh','Aditya']
+print(names)
+print(names[1])
+print(names[3])
+print(names[-2])
+print(names[3:])
+print(names[1:-2])
+print(names[:])
+names[0]='Varun.vb'
+print(names[0])
